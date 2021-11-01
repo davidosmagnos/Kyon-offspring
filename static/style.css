@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+	background-color:#0f0f0f;
+}
+
+.topRect{
+    width: 16em;
+    height: 2.3em;
+    background-color: #CDD1DE;
+    margin-left: auto;
+    margin-right: -9px;
+    margin-top: -15px;
+    border-radius: 25px;
+}
+
+.appName{
+    color:#eda61c;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1em;
+}
+.appName h1,.appName p,.appName h4{
+    margin: 3px;
+}
+
+.appName h4{
+    color: white !important;
+    text-align: center;
+}
+
+.formButtons{
+    background-color: #f4d482;
+    width: 95%;
+    height:10em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1em;
+}
+.formButtons img{
+    width: 100px;
+    height: 100px;
+    background-color: #CDD1DE;
+    border:2px solid #4da1a9;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 2em;
+}
+.formButtons h1{
+    display: inline;
+    position: relative;
+    bottom:1.5em;
+    left:.6em;
+}
+
+.generate{
+    margin-top: 3em;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.generate button{
+    width: 15em;
+    height: 15em;
+    background-color: #4da1a9;
+    border-radius: 100%;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+.generate .result{
+    width: 15em;
+    height: 15em;
+    background-color: transparent;
+    border-radius: 100%;
+    border-style: none;
+}

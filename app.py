@@ -9,7 +9,7 @@ app.config['UPLOAD_FOLDER'] = './'
 @app.route('/', methods=["GET", "POST"])
 def index():
     if request.method == "GET":
-        return render_template("index.html", result={})
+        return render_template("index.php", result={})
     else:
         image1 = request.files["image1"]
         path1 = os.path.join(app.config['UPLOAD_FOLDER'], image1.filename)
@@ -24,7 +24,7 @@ def index():
         os.remove(path1)
         os.remove(path2)
 
-        return render_template("index.html", result=result_from_landmarks)
+        return render_template("index.php", result=result_from_landmarks)
 
 
 if __name__ == '__main__':
