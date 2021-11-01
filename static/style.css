@@ -5,6 +5,7 @@
 }
 body {
 	background-color:#0f0f0f;
+    overflow: hidden;
 }
 
 .topRect{
@@ -79,4 +80,12 @@ body {
     background-color: transparent;
     border-radius: 100%;
     border-style: none;
+}
+.circle{
+    background-color: #CDD1DE;
+    width: 30em;
+    height: 30em;
+    border-radius: 100%;
+    margin-left: -3.7em;
+    margin-top: -6em;
 }
