@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -20,9 +22,15 @@ body {
 
 .appName{
     color:#eda61c;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Black', sans-serif;
+    
     margin-left: 1em;
 }
+.appName h1{
+    font-family: 'Montserrat';
+    margin: 3px;
+}
+
 .appName h1,.appName p,.appName h4{
     margin: 3px;
 }
@@ -49,6 +57,8 @@ body {
     margin-top: 30px;
     margin-left: 2em;
 }
+
+
 .formButtons h1{
     display: inline;
     position: relative;
@@ -74,6 +84,16 @@ body {
     font-weight: bold;
 }
 
+.generate:hover button{
+    width: 15em;
+    height: 15em;
+    background-color: #448d94;
+    border-radius: 100%;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}
+
 .generate .result{
     width: 15em;
     height: 15em;
@@ -88,4 +108,5 @@ body {
     border-radius: 100%;
     margin-left: -3.7em;
     margin-top: -6em;
+    align-items: center;
 }

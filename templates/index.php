@@ -46,11 +46,6 @@
         <div class="generate">
             <button>
                 <p>GENERATE<br>OFFSPRING</p>
-                {% if result and result.error %}
-                    <p>{{ result.error }}</p>
-                {% elif result and result.image_with_landmarks %}
-                    <p><img src="{{ result.image_with_landmarks }}" alt="face with landmarks" class="result"></p>
-                {% endif %}
             </button>
         </div>
     </form>
