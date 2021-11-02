@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import dlib
-img1 = cv2.imread("dog1.jpg")
+img1 = cv2.imread("test5.jpg")
 img2 = cv2.imread("dog2.jpg")
 img1g = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
 img2g = cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)
