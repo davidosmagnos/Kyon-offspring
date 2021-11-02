@@ -31,7 +31,7 @@
         <p>Scan, Classify, and Generate</p><br>
         <h4>Offspring Generator</h4>
     </div>
-    <form method="post" enctype="multipart/form-data" action="http://192.168.1.4:5000/results">
+    <form method="post" enctype="multipart/form-data" action="http://192.168.68.105:5000/results">
         <div class="formButtons">
             <label for="image1">
                 <input type="file" name="image1" id="image1" hidden onchange="loadFile('img1')">
@@ -45,19 +45,21 @@
         </div>
         <div class="generate">
             <button>
-                <p>GENERATE<br>OFFSPRING</p>
-                {% if result and result.error %}
+                <p>Generate<br>Offspring</p>
+                <!-- {% if result and result.error %}
                     <p>{{ result.error }}</p>
                 {% elif result and result.image_with_landmarks %}
                     <p><img src="{{ result.image_with_landmarks }}" alt="face with landmarks" class="result"></p>
-                {% endif %}
+                {% endif %} -->
             </button>
         </div>
     </form>
 
     <div class="bg">
         
-        <div class="circle"></div>
+        <div class="circle">
+            <img src="../static/guess.png" class="img-guess">
+        </div>
     </div>
     
 

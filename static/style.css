@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -24,11 +24,18 @@
         font-family: 'Montserrat', sans-serif;
         margin-left: 1em;
     }
-    .appName h1,.appName p,.appName h4{
+    .appName h1{
+        font-weight: 900;
+        margin: 3px;
+    }
+
+    .appName p{
+        font-weight: 300;
         margin: 3px;
     }
     
     .appName h4{
+        font-weight: 600;
         color: white !important;
         text-align: center;
     }
@@ -58,6 +65,7 @@
     }
     
     .generate{
+        position: relative;
         margin-top: 3em;
         width:fit-content;
         margin-left: auto;
@@ -73,6 +81,7 @@
         border-style: none;
         color: white;
         font-weight: bold;
+        z-index: 2;
     }
     
     .generate .result{
@@ -83,14 +92,21 @@
         border-style: none;
     }
     .circle{
+        z-index: 1;
         background-color: #CDD1DE;
         width: 30em;
         height: 30em;
-        border-radius: 100%;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
         margin-left: -5em;
         margin-top: -6em;
     }
     
+    .circle .img-guess{
+        width: 30em;
+        height: auto;
+        margin-top: 4em;
+    }
 }
 
 @media only screen and (min-width: 360px){
@@ -137,6 +153,7 @@
         background-color: #CDD1DE;
         border:2px solid #4da1a9;
         border-radius: 20px;
+        object-fit: cover;
         margin-top: 30px;
         margin-left: 2em;
     }
@@ -156,6 +173,8 @@
     }
     
     .generate button{
+        font-family: 'Montserrat';
+        font-weight: 600;
         width: 15em;
         height: 15em;
         background-color: #4da1a9;
@@ -176,9 +195,15 @@
         background-color: #CDD1DE;
         width: 30em;
         height: 30em;
-        border-radius: 100%;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
         margin-left: -3.7em;
         margin-top: -6em;
+    }
+    .circle .img-guess{
+        width: 30em;
+        height: auto;
+        margin-top: 6em;
     }
     
 }
@@ -267,9 +292,15 @@
         background-color: #CDD1DE;
         width: 30em;
         height: 30em;
-        border-radius: 100%;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
         margin-left: -2.4em;
         margin-top: -6em;
+    }
+    .circle .img-guess{
+        width: 30em;
+        height: auto;
+        margin-top: 6em;
     }
     
 }

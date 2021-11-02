@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat:repeat-x;
+    background-image: linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+    background-image: -o-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+    background-image: -moz-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+    background-image: -webkit-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+    background-image: -ms-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+}
+
+.topRect{
+    width: 18em;
+    height: auto;
+    background-color: #0f0f0f;
+    margin-left: -19px;
+    margin-right: 4em;
+    border-bottom-right-radius: 25px;
+    padding-top: 3em;
+    padding-left: 3em;
+    padding-bottom: 1em;
+}
+
+.appName{
+    margin-left: 1em;
+}
+
+#txt-ky{
+    font-family: 'Montserrat', 'Montserrat';
+    color:#eda61c;
+}
+#txt-ky-title{
+    font-size: 22px;
+    font-family: 'Montserrat', 'Montserrat';
+    font-weight: 900;
+    color:#eda61c;
+    
+}
+
+#txt-ky-desc{
+    font-size: 18px;
+    font-family: 'Montserrat', 'Montserrat';
+    font-weight: 300;
+    color:#eda61c;
+}
+
+
+#formOutput{
+    height:10em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1em;
+    margin-left: 4em;
+}
+
+#formOutput img{
+    width: 80px;
+    height: 80px;
+    background-color: #CDD1DE;
+    border:5px solid #fcfcfc;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+#formOutput .img-right{
+    -ms-transform: rotate(20deg); /* IE 9 */
+    transform: rotate(20deg);
+}
+
+#formOutput .img-left{
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    transform: rotate(-20deg);
+}
+
+#formOutput h1{
+    padding-bottom: auto;
+    padding-top: 1em;
+}
+
+.generate{
+    width:fit-content;
+   
+    margin-right: auto;
+    
+}
+
+.generate .circle-pic img{
+    width: 15em;
+    height: 15em;
+    background-color: #000000;
+    border:5px solid #4da1a9;
+    position: absolute;
+    object-fit: contain;
+}
+
+.bottom-img{
+    margin-left: auto;
+    margin-right: -4em;
+    padding-top: 4em;
+    width: 100%;
+    height: fit-content;
+}
+
+.bottom-img .overlapped-img{
+    padding-right:  -15em;
+    width: 25em;
+    height: auto;
+    z-index: 2;
+
+}
+
+.generate .result{
+    width: 15em;
+    height: 15em;
+    background-color: transparent;
+    border-radius: 100%;
+    border-style: none;
+}
+.circle{
+    width: 30em;
+    height: 30em;
+    border-radius: 100%;
+    margin-left: -3.7em;
+    margin-top: -6em;
+}
+.body-bg-yellow{
+    width: 100%;
+    height: fit-content;
+    background-image: url(curve.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+float: left;
+width: fit-content;
+padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+@media only screen and (min-width:320px){
+    body {
+        width: auto;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat:repeat-x;
+        background-image: linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+        background-image: -o-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+        background-image: -moz-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+        background-image: -webkit-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+        background-image: -ms-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+    }
+    
+    .topRect{
+        width: 18em;
+        height: auto;
+        background-color: #0f0f0f;
+        margin-left: -19px;
+        margin-right: 4em;
+        border-bottom-right-radius: 25px;
+        padding-top: 1em;
+        padding-left: 2em;
+        padding-bottom: 0.5em;
+    }
+    
+    .appName{
+        margin-left: 1em;
+    }
+    
+    #txt-ky{
+        font-family: 'Montserrat', 'Montserrat';
+        color:#eda61c;
+    }
+    #txt-ky-title{
+        font-size: 24px;
+        font-family: 'Montserrat', 'Montserrat';
+        font-weight: 900;
+        color:#eda61c;
+        
+    }
+    
+    #txt-ky-desc{
+        font-family: 'Montserrat', 'Montserrat';
+        font-size: 14px;
+        font-weight: 300;
+        color:#eda61c;
+    }
+    
+    
+    #formOutput{
+        height:10em;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 1em;
+        margin-left: 3em;
+    }
+    
+    #formOutput img{
+        width: 90px;
+        height: 90px;
+        background-color: #CDD1DE;
+        border:5px solid #fcfcfc;
+        object-fit: cover;
+        margin-top: 30px;
+    }
+    
+    #formOutput .img-right{
+        -ms-transform: rotate(20deg); /* IE 9 */
+        transform: rotate(20deg);
+    }
+    
+    #formOutput .img-left{
+        -ms-transform: rotate(-20deg); /* IE 9 */
+        transform: rotate(-20deg);
+    }
+    
+    #formOutput h1{
+        padding-bottom: auto;
+        padding-top: 1em;
+    }
+    
+    .generate{
+        width:fit-content;
+        margin-right: auto;
+        
+    }
+    
+    .generate .circle-pic img{
+        width: 12em;
+        height: 12em;
+        background-color: #000000;
+        border:5px solid #4da1a9;
+        position: absolute;
+        object-fit: contain;
+        margin-left: 1em;
+    }
+    
+    .bottom-img{
+        margin-left: auto;
+        margin-right: -5em;
+        padding-top: 4em;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .bottom-img .overlapped-img{
+        padding-right:  -15em;
+        width: 20em;
+        height: auto;
+        z-index: 2;
+    
+    }
+    
+    .generate .result{
+        width: 15em;
+        height: 15em;
+        background-color: transparent;
+        border-radius: 100%;
+        border-style: none;
+    }
+    .circle{
+        width: 30em;
+        height: 30em;
+        border-radius: 100%;
+        margin-left: -3.7em;
+        margin-top: -6em;
+    }
+    .body-bg-yellow{
+        width: fit-content;
+        height: fit-content;
+        background-image: url(curve.svg);
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+    float: left;
+    width: fit-content;
+    padding: 10px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+}
+
+@media only screen and (min-width:360px){
+    body {
+        width: auto;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat:repeat-x;
+        background-image: linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+        background-image: -o-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+        background-image: -moz-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+        background-image: -webkit-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+        background-image: -ms-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+    }
+    
+    .topRect{
+        width: 18em;
+        height: auto;
+        background-color: #0f0f0f;
+        margin-left: -10px;
+        margin-right: 4em;
+        border-bottom-right-radius: 25px;
+        padding-left: 3em;
+        padding-bottom: 0.5em;
+    }
+    
+    .appName{
+        margin-left: 5px;
+    }
+    
+    #txt-ky{
+        font-family: 'Montserrat', 'Montserrat';
+        color:#eda61c;
+    }
+    #txt-ky-title{
+        font-size: 22px;
+        font-family: 'Montserrat', 'Montserrat';
+        font-weight: 900;
+        color:#eda61c;
+        
+    }
+    
+    #txt-ky-desc{
+        font-family: 'Montserrat', 'Montserrat';
+        font-size: 14px;
+        font-weight: 300;
+        color:#eda61c;
+    }
+    
+    
+    #formOutput{
+        height:10em;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 1em;
+        margin-left: 4em;
+    }
+    
+    #formOutput img{
+        width: 85px;
+        height: 85px;
+        background-color: #CDD1DE;
+        border:5px solid #fcfcfc;
+        object-fit: cover;
+        margin-top: 30px;
+    }
+    
+    #formOutput .img-right{
+        -ms-transform: rotate(20deg); /* IE 9 */
+        transform: rotate(20deg);
+    }
+    
+    #formOutput .img-left{
+        -ms-transform: rotate(-20deg); /* IE 9 */
+        transform: rotate(-20deg);
+    }
+    
+    #formOutput h1{
+        padding-bottom: auto;
+        padding-top: 1em;
+    }
+    
+    .generate{
+        width:fit-content;
+        margin-right: auto;
+        
+    }
+    
+    .generate .circle-pic img{
+        width: 12em;
+        height: 12em;
+        background-color: #000000;
+        border:5px solid #4da1a9;
+        position: absolute;
+        object-fit: contain;
+        margin-left: 2em;
+    }
+    
+    .bottom-img{
+        margin-left: auto;
+        margin-right: -5em;
+        padding-top: 4em;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .bottom-img .overlapped-img{
+        padding-right:  -15em;
+        width: 22em;
+        height: auto;
+        z-index: 2;
+    
+    }
+    
+    .generate .result{
+        width: 15em;
+        height: 15em;
+        background-color: transparent;
+        border-radius: 100%;
+        border-style: none;
+    }
+    .circle{
+        width: 30em;
+        height: 30em;
+        border-radius: 100%;
+        margin-left: -3.7em;
+        margin-top: -6em;
+    }
+    .body-bg-yellow{
+        width: fit-content;
+        height: fit-content;
+        background-image: url(curve.svg);
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+    float: left;
+    width: fit-content;
+    padding: 10px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+}
+
+
+@media only screen and (min-width:411px){
+    body {
+        width: auto;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat:repeat-x;
+        background-image: linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+        background-image: -o-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+        background-image: -moz-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+        background-image: -webkit-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+        background-image: -ms-linear-gradient(bottom, #0f0f0f 70%, #CDD1DE 30%);
+    }
+    
+    .topRect{
+        width: 18em;
+        height: auto;
+        background-color: #0f0f0f;
+        margin-left: -20px;
+        margin-right: 4em;
+        border-bottom-right-radius: 25px;
+        padding-left: 3em;
+        padding-bottom: 0.5em;
+    }
+    
+    .appName{
+        margin-left: 5px;
+    }
+    
+    #txt-ky{
+        font-family: 'Montserrat', 'Montserrat';
+        color:#eda61c;
+    }
+    #txt-ky-title{
+        font-size: 26px;
+        font-family: 'Montserrat', 'Montserrat';
+        font-weight: 900;
+        color:#eda61c;
+        
+    }
+    
+    #txt-ky-desc{
+        font-family: 'Montserrat', 'Montserrat';
+        font-size: 16px;
+        font-weight: 300;
+        color:#eda61c;
+    }
+    
+    
+    #formOutput{
+        height:10em;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 1em;
+        margin-left: 4.5em;
+    }
+    
+    #formOutput img{
+        width: 90px;
+        height: 90px;
+        background-color: #CDD1DE;
+        border:5px solid #fcfcfc;
+        object-fit: cover;
+        margin-top: 30px;
+    }
+    
+    #formOutput .img-right{
+        -ms-transform: rotate(20deg); /* IE 9 */
+        transform: rotate(20deg);
+    }
+    
+    #formOutput .img-left{
+        -ms-transform: rotate(-20deg); /* IE 9 */
+        transform: rotate(-20deg);
+    }
+    
+    #formOutput h1{
+        padding-bottom: auto;
+        padding-top: 1em;
+    }
+    
+    .generate{
+        width:fit-content;
+        margin-right: auto;
+        
+    }
+    
+    .generate .circle-pic img{
+        width: 13em;
+        height: 13em;
+        background-color: #000000;
+        border:5px solid #4da1a9;
+        position: absolute;
+        object-fit: contain;
+        margin-left: 1em;
+    }
+    
+    .bottom-img{
+        margin-left: auto;
+        margin-right: -5em;
+        padding-top: 4.5em;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .bottom-img .overlapped-img{
+        padding-right:  -15em;
+        width: 22em;
+        height: auto;
+        z-index: 2;
+    
+    }
+    
+    .generate .result{
+        width: 15em;
+        height: 15em;
+        background-color: transparent;
+        border-radius: 100%;
+        border-style: none;
+    }
+    .circle{
+        width: 30em;
+        height: 30em;
+        border-radius: 100%;
+        margin-left: -3.7em;
+        margin-top: -6em;
+    }
+    .body-bg-yellow{
+        width: fit-content;
+        height: fit-content;
+        background-image: url(curve.svg);
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+    float: left;
+    width: fit-content;
+    padding: 10px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+}
+
