@@ -243,11 +243,12 @@ def faceSwap(filepath1: str, filepath2: str):
     center_face2 = (int((x + x + w) / 2), int((y + y + h) / 2))
 
     seamlessclone = cv2.seamlessClone(result, img2, img_head_mask, center_face2, cv2.NORMAL_CLONE)
+    
 
     retval, buffer = cv2.imencode('.jpg', seamlessclone)
     image_as_text = base64.b64encode(buffer)
 
-    return {'image_with_landmarks': 'data:image/png;base64,{}'.format(quote(image_as_text))}
+    return {'image_with_landmarks': 'data:image/png;base64,{}'.format(quote(image_as_text)),"image":seamlessclone}
     #cv2.imwrite("result.png", seamlessclone)
 
 # cv2.imshow("Dog 1", img1)
