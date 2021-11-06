@@ -7,8 +7,6 @@ from urllib.parse import quote
 import sqlite3
 import datetime
 
-conn = sqlite3.connect("kyonDB.db")
-
 
 
 
