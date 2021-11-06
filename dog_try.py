@@ -22,7 +22,6 @@ def resize(img1):
 
 
 def faceSwap(filepath1: str, filepath2: str):
-
     #reading images
     img1 =cv2.imread(filepath1)
     img_gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
@@ -31,10 +30,8 @@ def faceSwap(filepath1: str, filepath2: str):
 
     # img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2RGB)
     # img1 = cv2.resize(img1, dsize=None, fx=0.5, fy=0.5)
-
     img2 = cv2.imread(filepath2)
     img_gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
-
 
     img_new_face = np.zeros_like(img2)
 
