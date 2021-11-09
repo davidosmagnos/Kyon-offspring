@@ -33,7 +33,6 @@ body {
 
 #txt-ky{
     font-family: 'Montserrat', 'Montserrat';
-    color:#eda61c;
 }
 #txt-ky-title{
     font-size: 22px;
@@ -127,7 +126,6 @@ body {
     height: 30em;
     border-radius: 100%;
     margin-left: -3.7em;
-    margin-top: -6em;
 }
 .body-bg-yellow{
     width: 100%;
@@ -135,6 +133,51 @@ body {
     background-image: url(curve.svg);
     background-size:contain;
     background-repeat: no-repeat;
+}
+
+
+#errOutput{
+    background-color: #4da1a9;
+    height:auto;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1em;
+    width: 18em;
+    padding: 15px;
+}
+
+
+.err-img{
+    width: 18em;
+    height:18em;
+    background-color: #4da1a9;
+    border:5px solid #4da1a9;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 100%;
+    padding-right:  -15em;
+    z-index: 2;
+}
+
+.err-show{
+    margin-left: auto;
+    width: auto;
+    height: fit-content;
+}
+
+
+#txt-ky-err-title{
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 36px;
+    color: #ffff;
+}
+
+#txt-ky-err-msg{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 24px;
+    color: #ffff;
 }
 
 
@@ -277,7 +320,6 @@ clear: both;
         height: 30em;
         border-radius: 100%;
         margin-left: -3.7em;
-        margin-top: -6em;
     }
     .body-bg-yellow{
         width: fit-content;
@@ -428,7 +470,6 @@ clear: both;
         height: 30em;
         border-radius: 100%;
         margin-left: -3.7em;
-        margin-top: -6em;
     }
     .body-bg-yellow{
         width: fit-content;
@@ -580,7 +621,6 @@ clear: both;
         height: 30em;
         border-radius: 100%;
         margin-left: -3.7em;
-        margin-top: -6em;
     }
     .body-bg-yellow{
         width: fit-content;
