@@ -55,7 +55,9 @@ def results():
     else:
         return render_template("results.php", result={})
     
-
+@app.errorhandler(500)
+def internalError(e):
+    return render_template("error.php")
 
 @app.route('/')
 def index():
